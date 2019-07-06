@@ -11,9 +11,7 @@ function App(): JSX.Element {
         <h1>React & TypeScript!</h1>
         <p>Test: {sum(15, 15)} </p>
       </div>
-      <div className="scss-style">
-        <p>test</p>
-      </div>
+      <div className="scss-style" />
     </React.Fragment>
   );
 }
