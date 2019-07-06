@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './scss-style.scss';
 
 function App(): JSX.Element {
+  const sum = (a: number, b: number): number => a + b;
+
   return (
-    <div className="scss-style">
-      <p>Hello React</p>
-    </div>
+    <React.Fragment>
+      <div>
+        <h1>React & TypeScript!</h1>
+        <p>Test: {sum(15, 15)} </p>
+      </div>
+      <div className="scss-style">
+        <p>test</p>
+      </div>
+    </React.Fragment>
   );
 }
 

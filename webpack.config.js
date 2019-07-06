@@ -1,6 +1,4 @@
 const path = require('path');
-const sourceMap = true;
-
 const rules = [
   /* TypeScript用の設定 */
   {
@@ -24,7 +22,7 @@ const rules = [
         options: {
           url: false,
           // // ソースマップの有効化 development と production で勝手に切り替わるのでコメントアウト
-          // sourceMap: sourceMap,
+          // sourceMap: true,
 
           // sass-loader と postcss-loader を使用するので 2 を設定
           // ここを参考に設定 https://github.com/webpack-contrib/css-loader#importloaders
@@ -36,7 +34,7 @@ const rules = [
         loader: "sass-loader",
         // options: {
         // // ソースマップの有効化 development と production で勝手に切り替わるのでコメントアウト
-        //   sourceMap: sourceMap,
+        //   sourceMap: true,
         // }
       }
     ]
